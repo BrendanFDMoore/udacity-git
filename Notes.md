@@ -11,5 +11,19 @@ Commands:
 - `git init` creates a new repository in the current working directory
 	- `git init sub_dir` will create a repo in new dir `sub_dir` of cwd
 - `git status` shows the state of the staging area (things added but not yet committed)
+- `git reset --hard` resets working directory to the staging dir
+- `git branch` will show list of branches, with currently checked out branch starred (if applicable)
+	- `git brnahc new_name` creates a new named branch
+	- `git checkout -b new_branch_name` provides a shortcut to create & move to a new named branch. Equivalent to running:
+		- `git branch new_branch_name` to create the new branch
+		- `git checkout new_branch_name` to switch to the newly created branch
 
 `git config --global color.ui auto` to configure colour output  
+
+##Asteroids##
+
+Repository Diagram:
+
+	Master (revert controls)---- Master ---Easy Mode
+                              \-- Coins
+
