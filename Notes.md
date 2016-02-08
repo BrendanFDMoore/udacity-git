@@ -1,6 +1,11 @@
 ##UDACITY - GITHUB##
 
-###Lesson 1
+###Lessons 1 & 2 - WOrking with Git
+
+Config:
+- `git config --global color.ui auto` to configure colour output
+- `git config --global credential.helper wincred` to cache credentials
+
 Commands:
 
 - `git diff commit1 commit2` shows the changes from `commit1` to `commit2`
@@ -20,8 +25,8 @@ Commands:
 		- `git branch new_branch_name` to create the new branch
 		- `git checkout new_branch_name` to switch to the newly created branch
 - `git merge branch_name` will begin a merge of `branch_name` branch into the currently checked out branch
+	- **Note**: When there are conflicts via command line, open the file to edit and resolve. Looks for `<<<<<<` and `>>>>>>` markers.
 
-`git config --global color.ui auto` to configure colour output  
 
 
 
@@ -29,7 +34,7 @@ Commands:
 ##Asteroids##
 
 Repository Diagram:
-
-	Master (revert controls)---- Master ---Easy Mode
-                              \-- Coins
+										  /--Easy Mode----/--Easy mode--
+	Master (revert controls)--v- Master -^------Master---^-----Master--
+                              V-- Coins ----^
 
