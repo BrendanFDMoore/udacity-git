@@ -26,6 +26,8 @@ Commands:
 		- `git checkout new_branch_name` to switch to the newly created branch
 - `git merge branch_name` will begin a merge of `branch_name` branch into the currently checked out branch
 	- **Note**: When there are conflicts via command line, open the file to edit and resolve. Looks for `<<<<<<` and `>>>>>>` markers.
+- `git show [commit_id]` shows the diff of `commit_id` from its *parent*
+	- without a parameter, the command will show the diff of the most recent commit from its parent
 
 
 
