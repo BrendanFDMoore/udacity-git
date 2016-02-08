@@ -9,6 +9,8 @@ Config:
 Commands:
 
 - `git diff commit1 commit2` shows the changes from `commit1` to `commit2`
+	- `git diff` naked shows diff of cwd to parent
+	- `git diff --staged` to show the diff of staging directory to parent
 - `git log` shows the commit history starting with the most recent
 	- `git log --oneline` shows a shortened view
 	- `git log --graph --oneline` shows a compact treeview of the commits along the current branch
@@ -29,6 +31,13 @@ Commands:
 - `git show [commit_id]` shows the diff of `commit_id` from its *parent*
 	- without a parameter, the command will show the diff of the most recent commit from its parent
 
+###Lesson 3 - Working with GitHub
+
+Create a new repository on GitHub. Only use the initialize with README option if you do not have a repo with files already set up locally (ie, only when starting fresh).
+
+- `git remote` lists current remotes
+- `git remote add remote_name remote_url` sets up a new remote. Using `origin` is standard as a name when you will only have a single remote.
+	- eg: `git remote add origin https://github.com/BrendanFDMoore/udacity-git.git`
 
 
 
