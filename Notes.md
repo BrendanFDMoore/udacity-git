@@ -38,14 +38,22 @@ Create a new repository on GitHub. Only use the initialize with README option if
 - `git remote` lists current remotes
 - `git remote add remote_name remote_url` sets up a new remote. Using `origin` is standard as a name when you will only have a single remote.
 	- eg: `git remote add origin https://github.com/BrendanFDMoore/udacity-git.git`
-
-
+- `git push remote_name branch_name` will **push** commits from `branch_name` **to** `remote_name`remote_name`
+	- eg: `git push origin master`
+- `git pull remote_name branch_name` will **pull** commits from `remote_name` to `branch_name`
+	- eg: `git pull origin master`
+- `git fetch` will update the local version of the remote branch. 
+	- eg: local branch `origin/master` will be update to reflect changes to `master` on the remote, without affecting the local `master` branch
+	- `git pull origin master` is equivalent to:
+		- `git fetch origin`
+		- `get merge master origin/master`
 
 
 ##Asteroids##
 
 Repository Diagram:
-										  /--Easy Mode----/--Easy mode--
-	Master (revert controls)--v- Master -^------Master---^-----Master--
-                              V-- Coins ----^
+                                            /--Easy Mode----/--Easy mode--
+    --Master (revert controls)--v- Master -^------Master---^-----Master--
+                                V-- Coins ----^
 
+End.
