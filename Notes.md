@@ -47,6 +47,7 @@ Create a new repository on GitHub. Only use the initialize with README option if
 	- `git pull origin master` is equivalent to:
 		- `git fetch origin`
 		- `get merge master origin/master`
+- Pull Request: make a change to a fork on a new branch, to avoid breaking `master` branch
 
 
 ##Asteroids##
